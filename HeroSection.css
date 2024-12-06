@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+@keyframes morph {
+  0% {
+    color: #FF6347; /* Tomato */
+    transform: scale(1);
+  }
+  25% {
+    color: #FFA500; /* Orange */
+    transform: scale(1.1);
+  }
+  50% {
+    color: #32CD32; /* Lime Green */
+    transform: scale(1.2);
+  }
+  75% {
+    color: #1E90FF; /* Dodger Blue */
+    transform: scale(1.1);
+  }
+  100% {
+    color: #FF6347; /* Tomato (back to start color) */
+    transform: scale(1);
+  }
+}
+
+.animate-morph {
+  animation: morph 4s infinite alternate;
+}
+
+/* for image */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoomIn 1.5s ease-in-out;
+}
+
